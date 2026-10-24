@@ -2,7 +2,7 @@
 name: learning-notes
 description: 将源码、手册、文章、对话和已有笔记写成给人阅读的中文学习笔记；支持随手记、摘录、连续讲解、Obsidian 旧页融合、问题检索、冲突与时效核验、按需回顾，以及改名/合并影响预览和受保护保存。保留真实疑问、因果、例子和认识变化；普通问答、代码审查和 AI 交接不自动入库。
 metadata:
-  version: "2026-10-24.4"
+  version: "2026-10-24.5"
 ---
 
 # 学习笔记
@@ -51,6 +51,7 @@ metadata:
 - 链接、属性和原生视图：[Obsidian 约定](references/obsidian-conventions.md)；实际查找与写入：[Obsidian 操作](references/obsidian-operations.md)。
 - 改名/合并前只读检查，或需要版本保护、重复提交检查和局部恢复：[影响预览与受保护保存工具](references/note-tools.md)。
 - 需要排版：[阅读与视觉](references/visual-design.md)；追溯方法：[来源与取舍](references/sources.md)。
+- 插件说明书按需调用与本笔记分层：[插件与官方说明书分层索引](references/plugin-manuals.md)。
 - 更新技能、收拢重复入口或分发到另一宿主：[技能维护与验证](references/skill-maintenance.md)。
 
 写后回读正文、重要数字与条件及受影响引用。操作检查留在工具过程和简短回执，不塞进知识正文。交付以实际笔记入口和必要改动说明为主；只有实际检查了客户端，才说明对应的索引或视觉结果。
