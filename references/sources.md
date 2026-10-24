@@ -96,3 +96,7 @@
 ## 2026-10-24.5 合并同版号分叉
 
 推送前发现远端已有同号 `2026-10-24.4`（`3adf2b4`，仅改版本号＋维护源切 GitHub 克隆说明），与本机 24.4（含分层索引）内容不同。按“发现独有内容先合并”处理：收下远端的维护源克隆句（见 [技能维护与验证](skill-maintenance.md)），保留本机分层索引全部内容，版本号升 `2026-10-24.5` 消歧后推送。
+
+## 2026-10-24.6 官方 skills 重装
+
+用户执行 `npx skills add git@github.com:kepano/obsidian-skills.git`，SSH 无钥匙失败，改用 HTTPS 装上：`obsidian-markdown` / `obsidian-bases` / `obsidian-cli` / `json-canvas` / `defuddle` / `knap` 六个落到 `~/.agents/skills/`，Hermes 符号链接恢复可加载（`skill_view` 已验证）。[分层索引](plugin-manuals.md) L0 改以实际安装包为准，不再写断链回退。

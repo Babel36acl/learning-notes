@@ -2,7 +2,7 @@
 
 本技能就是用户笔记的说明书。分三层，默认只读本表，按需下钻，不默认全读 16 份 README。
 
-- L0 官方与内置打底：内置 `obsidian` skill（文件级读写，库根 `/vol4/1000/Backup/Obsidian/笔记`）＋ kepano `obsidian-markdown` / `obsidian-bases` / `obsidian-cli` / `json-canvas`（提交 `3ccff53`，已在 [来源与取舍](sources.md) 吸纳）。本机 `~/.hermes/skills/obsidian-markdown` 等三个符号链接 2026-10-24 检查已断（指向不存在的 `~/.agents/skills/` 下同名目录），本次不以它们为加载依据；语法以本技能已吸纳的清单与下述 L1 为准。
+- L0 官方与内置打底：内置 `obsidian` skill（文件级读写，库根 `/vol4/1000/Backup/Obsidian/笔记`）＋ kepano `obsidian-markdown` / `obsidian-bases` / `obsidian-cli` / `json-canvas`（`~/.agents/skills/` 下实体，`~/.hermes/skills/` 符号链接；2026-10-24 用 `npx skills add https://github.com/kepano/obsidian-skills.git` 重装后全部可加载，另带 `defuddle`、`knap`）。此前断链时以 [来源与取舍](sources.md) 吸纳的提交 `3ccff53` 为准，现以实际安装包为准。
 - L1 本技能定何时用：何时双链/嵌入/Callout/任务/表格/图注，见 [阅读与视觉](visual-design.md)；链接、标题、Properties 与视图边界，见 [Obsidian 约定](obsidian-conventions.md)；查找与写入、读回层次，见 [Obsidian 操作](obsidian-operations.md)；改名/合并预览与受保护保存，见 [影响预览与受保护保存工具](note-tools.md)。
 - L2 插件按需查：说明书存库内 `资料/摘录/插件文档/<目录ID>/README.上游.md`（上游默认分支原文，未改写）＋同目录 `来源.md`（仓库＋本地版本＋抓取日期）。用谁读谁，用前先核对 `.obsidian/plugins/<插件ID>/manifest.json` 版本是否与下表一致；README 功能不等于本机已验证。
 
