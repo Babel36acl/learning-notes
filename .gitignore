@@ -1,0 +1,9 @@
+node_modules/
+.state/
+*-plan.json
+*-receipt.json
+*.bak
+*.orig
+*~
+.DS_Store
+Thumbs.db
