@@ -4,7 +4,7 @@
 
 ## 单一正文与兼容入口
 
-本轮 Windows 安装约定：`C:/Users/A1165/.agents/skills/learning-notes` 是本地维护源，`.codex/skills/learning-notes` 通过目录联接访问同一份文件。目录联接只解决本机两个路径共用文件，不要求包内嵌套同名目录。更新前核实实际路径和联接；其他机器确认自己的维护源，不复制 Windows 联接到跨平台分发包。
+本轮 Windows 安装约定：`C:/Users/A1165/.agents/skills/learning-notes` 是本地维护源，`.codex/skills/learning-notes` 通过目录联接访问同一份文件。目录联接只解决本机两个路径共用文件，不要求包内嵌套同名目录。2026-10-24 起本地维护源本身是 `https://github.com/Babel36acl/learning-notes` 的克隆（分支 `main`）：改后先隔离验证再 commit/push，他机用 `npx skills add <仓库地址>` 或 `git clone/pull` 同步。更新前核实实际路径和联接；其他机器确认自己的维护源，不复制 Windows 联接到跨平台分发包。
 
 OpenViking 的 `viking://user/chuixin/skills/learning-notes` 是跨宿主分发目标。更改可能来自任一宿主：更新前读取并比较完整包，发现独有内容就先合并，不凭日期覆盖。上面的本地维护源不授权忽略远端新改动。它不是自动双向同步；修改后需显式分发并读回。
 
